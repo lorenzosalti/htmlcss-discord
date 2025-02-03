@@ -17,35 +17,53 @@ Global
     width: 1200px;
 }
 
+body {
+    font-family: 'Helvetica Neue',Arial, Helvetica, sans-serif;
+}
 
+/* Bottoni 
+.buttons {
+    border-radius: 50%;
+} */
+
+button {
+    all: unset;
+}
 /********
 Header
 ********/
 header {
-    background-color: #add8e6;
+    background-color: #255ee9;
     padding: 16px 0px;
 }
 
 header nav.container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav > * {
-    background-color: #daa520;
     padding: 10px;
     border: 1px dashed black;
-    display: flex;
-    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 header nav ul {
+    display: flex;
     justify-content: center;
     list-style: none;
-    flex-grow: 3;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 0px 40px;
+    color: white;
 }
 
 header nav #nav-login {
-    justify-content: flex-end;
+    flex-shrink: 0;
+    background-color: white;
 }
 
 
