@@ -22,9 +22,20 @@ body {
 }
 
 /*Bottoni*/ 
-button {
+main button {
+    all: unset;
+    border-radius: 100px;
+    font-size: 42px;
+    padding: 20px;
+    background-color: #23272a;
+} 
+
+header button {
     all: unset;
     border-radius: 30px;
+    font-size: 32px;
+    padding: 10px;
+    background-color: #23272a;
 } 
 
 /********
@@ -52,7 +63,7 @@ header nav > * {
     flex-shrink: 0;
 }
 
-header nav img, header nav div {
+header nav img {
     width: 250px;
     flex-shrink: 0;
 }
@@ -69,9 +80,16 @@ header nav ul li {
     color: white;
 }
 
+header nav div {
+    width: 250px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;   
+}
 header nav #nav-login {
     background-color: white;
-    padding: 10px;
+    font-size: 28px;
+    padding: 15px 20px;
 }
 
 
@@ -101,16 +119,21 @@ main section div.container.main-header {
     width: 1400px;
 }
 
-div.buttons.main-header {
-    font-size: 42px;
-}
-
 main section.main-header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
 }
 
-/* Intestazioni e paragrafi */
+main section.main-header p {
+    margin-bottom: 60px;
+}
+
+main section.main-header button:first-child {
+    color: black;
+    background-color: white;
+}
+
+/* Intestazioni e paragrafi generale */
 h1 {
     font-size: 90px;
     margin-bottom: 60px;
@@ -119,15 +142,11 @@ h1 {
 h2 {
     font-size: 80px;
     margin-bottom: 80px;
-}
-
-h3.stars {
-    background-image: url(../img/stars.svg);
-    background-size: inherit;
+    line-height: 1.5em;
 }
 
 main section p {
-    font-size: 40px;
+    font-size: 34px;
 }
 
 /* Sezioni centrali */
@@ -143,7 +162,7 @@ main section div.container.reverse {
 .small-content {
     border: 1px dashed black;
     width: 40%;
-    padding: 80px;
+    padding: 60px 160px 0px 60px;
 }
 
 /* Ultima sezione main-footer */
@@ -151,9 +170,29 @@ main section div.container.main-footer {
     border: 1px dashed black;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
+h3.stars {
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    font-size: 70px;
+    width: fit-content;
+    margin-bottom: 80px;
+}
+
+main section div.container.main-footer p{
+    padding: 0px 275px;
+}
+
+main section div.container.main-footer button {
+    color: white;
+    background-color: #7288da;
+}
+
+main section div.container.main-footer img {
+    width: inherit;
+}
 /*******
 Footer
 *******/
