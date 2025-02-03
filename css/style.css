@@ -1,0 +1,169 @@
+/****
+Reset
+****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/********
+Global
+********/
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+
+/********
+Header
+********/
+header {
+    background-color: #add8e6;
+    padding: 16px 0px;
+}
+
+header nav.container {
+    display: flex;
+}
+
+header nav > * {
+    background-color: #daa520;
+    padding: 10px;
+    border: 1px dashed black;
+    display: flex;
+    flex-grow: 1;
+}
+
+header nav ul {
+    justify-content: center;
+    list-style: none;
+    flex-grow: 3;
+}
+
+header nav #nav-login {
+    justify-content: flex-end;
+}
+
+
+/******
+Main
+******/
+main section {
+    padding: 55px 0;
+}
+
+main section div.container {
+    display: flex;
+}
+
+main > :nth-child(odd) {
+    background-color: #d3d3d3;
+}
+
+main section div.container.main-header {
+    width: 900px;
+    background-color: #ee82ee;
+    border: 1px dashed black;
+}
+
+main section.main-header {
+    background-color: #00008b;
+}
+
+main section div.container.main-footer {
+    background-color: #228b22;
+    border: 1px dashed black;
+}
+
+main section div.container.reverse {
+    flex-direction: row-reverse;
+}
+
+.large-content {
+    background-color: #1e90ff;
+    flex-grow: 3;
+    border: 1px dashed black;
+}
+
+.small-content {
+    background-color: #ffc0cb;
+    flex-grow: 2;
+    border: 1px dashed black;
+}
+
+
+/*******
+Footer
+*******/
+footer > section {
+    background-color: #23272a;
+}
+
+footer section .container {
+    display: flex;
+}
+
+section.upper-foot {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0px 40px;
+}
+
+section.lower-foot {
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding-top: 30px;
+}
+
+section.upper-foot .single {
+    background-color: #f08080;
+    flex-grow: 2;
+    border: 1px dashed black;
+}
+
+section.upper-foot .multiple {
+    display: flex;
+    background-color: #20b2aa;
+    flex-grow: 4;
+    border: 1px dashed black;
+}
+
+section.upper-foot .sub-multiple {
+    flex-grow: 1;
+    border: 1px dashed white;
+}
+
+footer section nav.container {
+    padding: 20px 0px;
+    background-color: #7fffd4;
+    justify-content: space-between;
+}
+
+.foot-button {
+    padding: 10px;
+    background-color: #ffb6c1;
+    border: 1px dashed black;
+}
+
+
+
+
+/***********************************
+DEBUG   DA RIMUOVERE A FINE SVILUPPO
+***********************************/
+main section div.container {
+    height: 500px;
+    background-color: aqua;
+ }
+
+main section div.container.main-footer {
+    height: 890px;
+}
+
+footer section div.container {
+    height: 500px;
+    background-color: #ee82ee;
+}
