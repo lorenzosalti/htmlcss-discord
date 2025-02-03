@@ -14,21 +14,19 @@ Global
 ********/
 .container {
     margin: 0 auto;
-    width: 1200px;
+    width: fit-content;
 }
 
 body {
     font-family: 'Helvetica Neue',Arial, Helvetica, sans-serif;
 }
 
-/* Bottoni 
-.buttons {
-    border-radius: 50%;
-} */
-
+/*Bottoni*/ 
 button {
     all: unset;
-}
+    border-radius: 25px;
+} 
+
 /********
 Header
 ********/
@@ -71,7 +69,8 @@ header nav #nav-login {
 Main
 ******/
 main section {
-    padding: 55px 0;
+    padding-top: 210px;
+    padding-bottom: 200px;
 }
 
 main section div.container {
@@ -83,13 +82,39 @@ main > :nth-child(odd) {
 }
 
 main section div.container.main-header {
-    width: 900px;
-    background-color: #ee82ee;
     border: 1px dashed black;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    width: 1400px;
+}
+
+main section p {
+    font-size: 40px;
+}
+
+div.buttons.main-header {
+    font-size: 42px;
+}
+
+h1 {
+    font-size: 90px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+h3.stars {
+    background-image: url(../img/stars.svg);
+    background-size: cover;
 }
 
 main section.main-header {
-    background-color: #00008b;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
 }
 
 main section div.container.main-footer {
@@ -174,7 +199,6 @@ DEBUG   DA RIMUOVERE A FINE SVILUPPO
 ***********************************/
 main section div.container {
     height: 500px;
-    background-color: aqua;
  }
 
 main section div.container.main-footer {
